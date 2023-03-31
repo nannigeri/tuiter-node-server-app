@@ -10,6 +10,8 @@ export default [
         "replies": 123,
         "retuits": 432,
         "likes": 2345,
+        "dislikes": 10,
+        "disliked": true,
         "handle": "@angel_cat",
         "tuit": "hello to all the cats on twitter! what's your favorite cat food?"
     },
@@ -24,6 +26,8 @@ export default [
         "replies": 123,
         "retuits": 432,
         "likes": 2345,
+        "dislikes": 10,
+        "disliked": false,
         "handle": "@catlover",
         "tuit": "reply with the funniest kitten moments! my kitten loves playing with socks."
     },
@@ -38,6 +42,8 @@ export default [
         "replies": 123,
         "retuits": 432,
         "likes": 2345,
+        "dislikes": 10,
+        "disliked": false,
         "handle": "@cutecats",
         "tuit": "reply with if you prefer cats or dogs as pets! i personally prefer cats a lot more."
     }

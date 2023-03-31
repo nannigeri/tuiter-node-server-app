@@ -14,7 +14,9 @@ const templateTuit = {
     "liked": false,
     "replies": 32,
     "retuits": 300,
+    "disliked": false,
     "likes": 567,
+    "dislikes": 1,
 }
 
 const createTuit = (req, res) => {
