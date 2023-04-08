@@ -36,22 +36,17 @@ const findTuits = async (req, res) => {
 
 
 const updateTuit = async (req, res) => {
-    const tuitdIdToUpdate = parseInt(req.params.tid);
+    const tuitdIdToUpdate = req.params.tid;
     const updates = req.body;
-    const status = await tuitsDao
-        .updateTuit(tuitdIdToUpdate,
-            updates);
+    const status = await tuitsDao.updateTuit(tuitdIdToUpdate, updates);
     res.json(status);
-
 }
 
 const deleteTuit = async (req, res) => {
-    const tuitdIdToDelete = parseInt(req.params.tid);
-    const status = await tuitsDao
-        .deleteTuit(tuitdIdToDelete);
+    const tuitdIdToDelete = req.params.tid;
+    const status = await tuitsDao.deleteTuit(tuitdIdToDelete);
     res.json(status);
 }
-
 
 export default (app) => {
     app.post('/api/tuits', createTuit);
